@@ -87,7 +87,7 @@ class _PostPageState extends State<PostPage> {
             child: IndexedStack(
               index: _currentIndex,
               children: [
-                // Halaman Home
+                
                 FutureBuilder<List<PostModel>>(
                   future: futurePosts,
                   builder: (context, snapshot) {
@@ -126,13 +126,13 @@ class _PostPageState extends State<PostPage> {
                   },
                 ),
 
-                // Halaman Foto
+                
                 PhotoGalleryPage(),
               ],
             ),
           ),
 
-          // Bottom Navigation
+          
           Container(
             padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
             decoration: BoxDecoration(
@@ -153,7 +153,7 @@ class _PostPageState extends State<PostPage> {
   }
 }
 
-// Halaman Gallery Foto
+
 class PhotoGalleryPage extends StatefulWidget {
   @override
   State<PhotoGalleryPage> createState() => _PhotoGalleryPageState();
